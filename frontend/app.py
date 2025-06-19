@@ -5,29 +5,27 @@ from assemblyai_transcriber import upload_audio, transcribe_audio
 from huggingface_summarizer import generate_summary, simplify_text
 
 def apply_custom_style():
-    st.markdown(
-        """
+    st.markdown("""
         <style>
-        div.block-container {
-            max-width: 900px;
-            padding: 2rem;
-            margin: auto;
-        }
-        h1, h2, h3 {
-            margin-top: 1.2em;
-            margin-bottom: 0.6em;
-        }
-        button {
-            font-size: 16px;
-            font-weight: 600;
-        }
-        footer {
-            visibility: hidden;
-        }
+            div.block-container {
+                max-width: 900px;
+                padding: 2rem 2rem 2rem 2rem;
+                margin: auto;
+            }
+            h1, h2, h3 {
+                margin-top: 1.2em;
+                margin-bottom: 0.6em;
+            }
+            button[kind="primary"] {
+                font-size: 16px !important;
+                font-weight: 600 !important;
+            }
+            footer {
+                visibility: hidden;
+            }
         </style>
-        """,
-        unsafe_allow_html=True
-    )
+    """, unsafe_allow_html=True)
+
 
 apply_custom_style()
 

@@ -5,10 +5,8 @@ from fpdf import FPDF
 from assemblyai_transcriber import upload_audio, transcribe_audio
 from huggingface_summarizer import generate_summary, simplify_text
 
-# Page config
 st.set_page_config(page_title="Transcribe-AI", layout="wide")
 
-# Title & Intro
 st.markdown("## 🧠 Transcribe-AI")
 st.markdown("Upload your meeting or lecture audio to generate:")
 st.markdown("- ✅ Transcriptions\n- ✍️ Summaries\n- 🪄 Simplified Notes")
@@ -16,7 +14,6 @@ st.markdown("- ✅ Transcriptions\n- ✍️ Summaries\n- 🪄 Simplified Notes")
 st.markdown("---")
 st.subheader("🔊 Upload Audio")
 
-# File uploader
 uploaded_file = st.file_uploader("Upload Audio File", type=["mp3", "wav", "m4a"])
 
 if uploaded_file is not None:
@@ -39,14 +36,12 @@ if uploaded_file is not None:
     st.markdown("---")
     st.subheader("✨ AI Tools")
 
-    # Summary
     if st.button("📝 Generate Summary"):
         with st.spinner("Generating summary..."):
             summary = generate_summary(transcript)
             st.subheader("📄 Summary:")
             st.write(summary)
 
-            # TXT download
             st.download_button(
                 label="📄 Download Summary (TXT)",
                 data=summary,
@@ -54,7 +49,6 @@ if uploaded_file is not None:
                 mime="text/plain"
             )
 
-            # PDF download
             pdf = FPDF()
             pdf.add_page()
             pdf.set_font("Arial", size=12)
@@ -66,14 +60,12 @@ if uploaded_file is not None:
             with open(pdf_path, "rb") as f:
                 st.download_button("📄 Download Summary (PDF)", f, "summary.pdf")
 
-    # Simplified Notes
     if st.button("🧠 Simplify Notes"):
         with st.spinner("Simplifying text..."):
             simplified = simplify_text(transcript)
             st.subheader("🪄 Simplified Notes:")
             st.write(simplified)
 
-            # TXT download
             st.download_button(
                 label="🪄 Download Simplified Notes (TXT)",
                 data=simplified,
@@ -81,7 +73,6 @@ if uploaded_file is not None:
                 mime="text/plain"
             )
 
-            # PDF download
             pdf = FPDF()
             pdf.add_page()
             pdf.set_font("Arial", size=12)
@@ -93,6 +84,5 @@ if uploaded_file is not None:
             with open(pdf_path, "rb") as f:
                 st.download_button("🪄 Download Simplified Notes (PDF)", f, "simplified_notes.pdf")
 
-# Footer
 st.markdown("---")
-st.markdown("Built with ❤️ by  Team-7 for Elisa Hackathon ✨")
+st.markdown("Built with ❤️ by  Team-FOMO for Elisa Hackathon ✨")

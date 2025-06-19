@@ -1,15 +1,15 @@
-# 🧠 Transcribe-AI
+# Transcribe-AI
 
 **Transcribe-AI** is a GenAI-powered assistant that transcribes, summarizes, and simplifies meeting or lecture audio — so no one falls behind.
 
-🎯 **Built with real-world users in mind**, based on interviews with professionals who struggle to catch up after missed meetings.
+**Built with real-world users in mind**, based on interviews with professionals who struggle to catch up after missed meetings.
 
 [![Streamlit App](https://img.shields.io/badge/Live%20App-Streamlit-success?style=flat&logo=streamlit)](https://transcribe-ai-demo.streamlit.app/)  
-📽️ [Watch our original concept demo video](data/ELISA-AI-DEMO.mp4)
+[Watch our original concept demo video](data/ELISA-AI-DEMO.mp4)
 
 ---
 
-## What It Does
+### What It Does
 
 - 🔊 Upload audio from meetings or lectures
 - 📃 Transcribes speech to text (via AssemblyAI)
@@ -20,7 +20,7 @@
 ---
 
 
-## Why We Built It
+### Why We Built It
 
 Modern teams and students rely heavily on virtual meetings and recorded lectures. But when someone misses a session due to scheduling conflicts, timezone differences, or emergencies, catching up becomes difficult and inefficient.
 
@@ -37,7 +37,7 @@ Transcribe-AI helps people stay informed, make better decisions faster, and elim
 
 ---
 
-## AI/ML Tools Used
+### AI/ML Tools Used
 
 | Task | Tool |
 |------|------|
@@ -48,4 +48,4 @@ Transcribe-AI helps people stay informed, make better decisions faster, and elim
 
 ---
 
-## 🔥 Screenshots / Demo
+### Screenshots / Demo

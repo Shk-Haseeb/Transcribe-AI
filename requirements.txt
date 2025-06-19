@@ -1,0 +1,7 @@
+streamlit
+requests
+pydub
+transformers
+torch
+fpdf
+python-dotenv

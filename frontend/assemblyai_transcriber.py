@@ -1,10 +1,9 @@
-import os
-from dotenv import load_dotenv
 import requests
 import time
 
-load_dotenv()
-API_KEY = os.getenv("ASSEMBLYAI_API_KEY")
+import streamlit as st
+API_KEY = st.secrets["ASSEMBLYAI_API_KEY"]
+
 
 headers = {
     "authorization": API_KEY,

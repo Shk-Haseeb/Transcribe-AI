@@ -8,8 +8,9 @@ def apply_custom_style():
     st.markdown(
         """
         <style>
-        .main {
+        div.block-container {
             max-width: 900px;
+            padding: 2rem;
             margin: auto;
         }
         h1, h2, h3 {

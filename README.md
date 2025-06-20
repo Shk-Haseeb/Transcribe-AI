@@ -63,4 +63,3 @@ Built originally for the **Elisa AI Hackathon**, now production-ready and public
 ### Screenshots & Demo
 
 ![UI Screenshot](screenshots/transcription_screen.png)  
-![Live Demo GIF](screenshots/ui_demo.gif)

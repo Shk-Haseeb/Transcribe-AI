@@ -1,6 +1,6 @@
 # Transcribe-AI
 
-**Transcribe-AI** is an AI-powered assistant that turns meeting or lecture audio into clean transcriptions, smart summaries, and simplified notes — in minutes.
+**Transcribe-AI** is an AI-powered assistant that turns meeting or lecture audio into clean transcriptions, smart summaries, and simplified notes in minutes.
 
 [Live Demo](https://transcribe-ai-demo.streamlit.app/)  
 [Watch Original Concept Demo](data/ELISA-AI-DEMO.mp4)

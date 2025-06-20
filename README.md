@@ -1,51 +1,66 @@
 # Transcribe-AI
 
-**Transcribe-AI** is a GenAI-powered assistant that transcribes, summarizes, and simplifies meeting or lecture audio — so no one falls behind.
+**Transcribe-AI** is an AI-powered assistant that turns meeting or lecture audio into clean transcriptions, smart summaries, and simplified notes — in minutes.
 
-**Built with real-world users in mind**, based on interviews with professionals who struggle to catch up after missed meetings.
-
-[![Streamlit App](https://img.shields.io/badge/Live%20App-Streamlit-success?style=flat&logo=streamlit)](https://transcribe-ai-demo.streamlit.app/)  
-[Watch our original concept demo video](data/ELISA-AI-DEMO.mp4)
+[Live Demo](https://transcribe-ai-demo.streamlit.app/)  
+[Watch Original Concept Demo](data/ELISA-AI-DEMO.mp4)
 
 ---
 
-### What It Does
+### The Problem
 
-- 🔊 Upload audio from meetings or lectures
-- 📃 Transcribes speech to text (via AssemblyAI)
-- ✍️ Summarizes key points (via Hugging Face Transformers)
-- 🪄 Simplifies language for easy reading
-- 📥 Export as `.txt` or `.pdf`
+In today’s remote and flexible work environments, meetings and lectures are often recorded, but rarely revisited. People miss important sessions due to scheduling conflicts, time zone differences, or last-minute obligations. While recordings are available, few have the time or focus to sit through an hour of audio or video just to extract a few key points.
 
----
+This creates a gap in how teams and students stay informed:
+- Valuable information is buried in long, unstructured content
+- Missed sessions result in knowledge gaps, reduced productivity, and confusion
+- People often rely on others for a quick summary, which is inconsistent and unreliable
 
+During the Elisa AI Hackathon, we spoke with professionals across industries (Visma, Nokia, KPMG) who confirmed this challenge:
 
-### Why We Built It
+> “I miss one meeting and waste half a day trying to catch up. I wish I could just get the summary.”
 
-Modern teams and students rely heavily on virtual meetings and recorded lectures. But when someone misses a session due to scheduling conflicts, timezone differences, or emergencies, catching up becomes difficult and inefficient.
-
-During the Elisa AI Hackathon, we interviewed professionals across different industries. One insight came up repeatedly:
-
-> “I miss one meeting, and I spend half a day trying to catch up.”
-
-This pain point inspired Transcribe-AI.
-
-We designed and built this tool to make missed content instantly accessible. Instead of replaying entire recordings or relying on someone else's notes, users can upload audio and get clean transcriptions, concise summaries, and simplified notes—all in minutes.
-
-Transcribe-AI helps people stay informed, make better decisions faster, and eliminate the frustration of information overload.
-
+This is not just a minor inconvenience. It affects how quickly people can make decisions, stay aligned, and move work forward. 
+We designed Transcribe-AI to address this challenge by turning long, unstructured recordings into clear, structured, and simplified insights.
 
 ---
 
-### AI/ML Tools Used
+### Our Solution
 
-| Task | Tool |
-|------|------|
-| Audio Transcription | AssemblyAI |
-| Summarization & Simplification | Hugging Face `facebook/bart-large-cnn` |
-| Prompt-based rewriting | Custom instructions |
-| Optional GPT Support | Swappable OpenAI API (archived) |
+Transcribe-AI uses GenAI to break down audio content into essential information you can use immediately. Upload any audio file and receive:
+- A full transcription
+- A concise summary
+- Simplified notes for fast understanding
+- Optional downloads as PDF or TXT
+
+Built originally for the **Elisa AI Hackathon**, now production-ready and publicly hosted.
 
 ---
 
-### Screenshots / Demo
+### How It Works
+
+1. **Audio Upload** via Streamlit
+2. **Speech-to-Text** using AssemblyAI
+3. **Summarization & Simplification** using Hugging Face Transformers (`facebook/bart-large-cnn`)
+4. **PDF/Text Export** via Python backend
+
+---
+
+### AI & Tools Used
+
+| Component           | Technology                        |
+|---------------------|------------------------------------|
+| Transcription       | AssemblyAI API                     |
+| Summarization       | Hugging Face `bart-large-cnn`      |
+| Simplification      | Prompt-based summarization         |
+| PDF Export          | FPDF                               |
+| Frontend            | Streamlit                          |
+| Secrets Management  | `st.secrets`, `.gitignore`, `.env` |
+| Hosting             | Streamlit Cloud                    |
+
+---
+
+### Screenshots & Demo
+
+![UI Screenshot](screenshots/transcription_screen.png)  
+![Live Demo GIF](screenshots/ui_demo.gif)

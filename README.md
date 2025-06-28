@@ -1,4 +1,4 @@
-# Transcribe-AI
+## Transcribe-AI
 
 **Transcribe-AI** is a SaaS-style GenAI tool that transcribes, summarizes, and simplifies meeting or lecture audio using AssemblyAI and Hugging Face. It supports audio file uploads, end-to-end AI pipelines, PDF and TXT export, and is deployed live with Streamlit Cloud.
 

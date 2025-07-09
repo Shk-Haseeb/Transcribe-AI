@@ -44,19 +44,6 @@ Built originally for the **Elisa AI Hackathon**, now production-ready and public
 3. **Summarization & Simplification** using Hugging Face Transformers (`facebook/bart-large-cnn`)
 4. **PDF/Text Export** via Python backend
 
----
-
-### AI & Tools Used
-
-| Component           | Technology                        |
-|---------------------|------------------------------------|
-| Transcription       | AssemblyAI API                     |
-| Summarization       | Hugging Face `bart-large-cnn`      |
-| Simplification      | Prompt-based summarization         |
-| PDF Export          | FPDF                               |
-| Frontend            | Streamlit                          |
-| Secrets Management  | `st.secrets`, `.gitignore`, `.env` |
-| Hosting             | Streamlit Cloud                    |
 
 ---
 

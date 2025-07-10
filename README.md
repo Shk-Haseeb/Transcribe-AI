@@ -33,7 +33,7 @@ Transcribe-AI uses GenAI to break down audio content into essential information 
 - Simplified notes for fast understanding
 - Optional downloads as PDF or TXT
 
-Built originally for the **Elisa AI Hackathon**, now production-ready and publicly hosted.
+Built originally for the **Elisa AI Hackathon 2024**, now production-ready and publicly hosted.
 
 ---
 

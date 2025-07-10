@@ -84,7 +84,7 @@ if uploaded_file is not None:
             with open(summary_pdf_path, "rb") as f:
                 st.download_button("📄 Download Summary (PDF)", f, "summary.pdf")
 
-    if st.button("🧠 Simplify Notes"):
+    if st.button("Simplify Notes"):
         with st.spinner("Simplifying..."):
             simplified = simplify_text(transcript)
             st.subheader("🪄 Simplified Notes")

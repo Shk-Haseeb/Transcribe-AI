@@ -43,10 +43,3 @@ Built originally for the **Elisa AI Hackathon 2024**, now production-ready and p
 2. **Speech-to-Text** using AssemblyAI
 3. **Summarization & Simplification** using Hugging Face Transformers (`facebook/bart-large-cnn`)
 4. **PDF/Text Export** via Python backend
-
-
----
-
-### Screenshots & Demo
-
-![UI Screenshot](screenshots/transcription_screen.png)  
